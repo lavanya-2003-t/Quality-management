@@ -1,0 +1,71 @@
+<?php include('server.php') ?>
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <title>Registration Form</title> 
+    <link rel="stylesheet" 
+          href="style1.css"> 
+</head> 
+ <body> <center>
+<a href="https://q-gate.in/">
+  <img src="logo1.png" alt="logo"></center>
+</a><br><br>
+    <div class="main"> 
+        <h1>Sign Up</h1> 
+        <form action=""> 
+            <label for="Name">Name:</label> 
+            <input type="text" id="first" 
+                   name="first" 
+                   placeholder="Enter your name" required>
+            <label for="role"placeholder="Enter your role">Role:</label> 
+          <select id="role" name="role" required> 
+                  
+                <option value="manager">Manager</option> 
+                <option value="hr">Human Resources</option> 
+                <option value="tl">Team Leader</option> 
+                <option value="employee">Employee</option> 
+            </select> 
+            <label for="password">Password:</label> 
+            <input type="password" id="password" name="password"   placeholder="Enter your password"
+                pattern="^(?=.*\d)(?=.*[a-zA-Z])(?=.*[^a-zA-Z0-9])\S{8,}$" required       
+             title="Password must contain at least one number, one alphabet, one symbol, and be at least 8 characters long">  
+             <label for="repassword">Re-type Password:</label> 
+            <input type="password" id="repassword"name="repassword" placeholder="Re-Enter your password" required>  
+             <span id="pass"></span>     
+              <label for="mobile">Contact:</label> 
+            <input type="text" id="mobile" name="mobile"  placeholder="Enter your mobile number"    maxlength="10">                   
+                 <label for="gender">Gender:</label> 
+            <select id="gender" name="gender" required> 
+                <option value="male">Male</option> 
+                <option value="female">Female</option> 
+                <option value="other">Other</option> 
+            </select> 
+    
+            <div class="wrap"> 
+                <button type="submit" onclick="solve()">  <a href="login1.html">
+                  Submit </a>
+                  </button>
+
+                <button type="submit"
+                        onclick="solve()">
+                 <a href="index.html">  Cancel</a>
+                </button>
+          </div> 
+        </form> 
+    </div> 
+
+    <script src="script.js"></script> 
+</body> 
+  
+</html>                
+                   
+  
+          
+            
+  
+           
+                  
+                   
+                
+
+             

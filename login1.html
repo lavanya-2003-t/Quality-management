@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login For Employee</title>
+    <link rel="stylesheet"href="style.css">
+</head>
+<body>
+<center><a href="https://q-gate.in/">
+  <img src="logo1.png" alt="logo"></center>
+</a><br><br><br>
+    <div class="main">
+        <h1>Sign in</h1>
+        
+        <form name="f1"  action="login.php" onsubmit = "return validation()" method = "POST">
+            <label for="first"> Empolyee Name</label>
+            <input type="text" id="name" name="name"placeholder="Enter your name" required>
+            <label for="password"> Password</label>
+            <input type="password" id="password"name="password"placeholder="Enter your Password" required>
+            <div class="wrap">
+               <button type="submit" onclick="solve()"><a href="projectname.html">Submit</a>  </button>
+               <button type="submit"onclick="solve()">
+                 <a href="index.html">  Cancel</a>
+                </button>
+            </div>
+        </form>
+        <p>Not registered? <a href="register.html" style="text-decoration: none;"> Create an account
+            </a>
+        </p>
+    </div>
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+        </script>  
+</body>
+ 
+</html>
